@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Cotação de reservas - Pousada Casa de Pedra Ilhabela</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Start your project here-->  
+	<div class="row animated fadeInUp d-flex justify-content-center warning-color">
+    <img id="img-logo" src="img/Casa-de-Pedra-Logo.png" class="img-fluid" alt="Responsive image">
+  </div>
+
+  <div class="row animated fadeInUp d-flex justify-content-center">
+		<div class="center col-md-6 mt-3 ml-3">
+
+      <h2 class="d-flex justify-content-center mb-4 mt-4"><i class="fas fa-search-location"></i>  Cotação de reservas</h2>
+
+      <div class="row mr-0">
+				<div class="col-md-6">
+          <div id="div-checkin" class="md-form md-outline input-with-post-icon datepicker mt-2 mb-1">
+            <input placeholder="Data do check-in" type="date" id="checkin" class="form-control" style="min-height: 40px;">
+            <label for="example">Data do Check-in</label>
+          </div>
+        </div>
+				<div class="col-md-6">
+          <div id="div-checkout" class="md-form md-outline input-with-post-icon datepicker mt-2 mb-1">
+            <input placeholder="Selecione a data de check-out" type="date" id="checkout" class="form-control" style="min-height: 40px;">
+            <label for="example" class="mb-0">Data do Check-out</label>
+          </div>
+				</div>
+      </div>
+
+      <div class="row mr-0">
+				<div class="col-md-12">
+          <select id="sel-suite" class="browser-default custom-select mt-2">
+            <option selected value="12328">Suíte Luxo</option>
+            <option value="12319">Suíte Family</option>
+            <option value="70697">Suíte Friends</option>
+          </select>
+				</div>
+      </div>
+
+      <div class="row mr-0">
+				<div class="col-md-12">
+          <select id="sel-adultos" class="browser-default custom-select mt-3">
+            <option selected value="1">1 adulto</option>
+            <option value="2">2 adultos</option>
+            <option value="3">3 adultos</option>
+            <option value="4">4 adultos</option>
+            <option value="5">5 adultos</option>
+          </select>
+				</div>
+      </div>
+
+      <div class="row mr-0">
+				<div class="col-md-12">
+          <select id="sel-criancas" class="browser-default custom-select mt-3">
+            <option selected value="0">Nenhuma criança</option>
+            <option value="1">1 criança</option>
+            <option value="2">2 crianças</option>
+            <option value="3">3 crianças</option>
+            <option value="4">4 crianças</option>
+          </select>
+				</div>
+      </div>
+
+
+      <div id="div-idade-1" class="row mr-0">
+        
+        <div id="div-sel-idade-1" class="col-md-6" style="display:none">
+          <select id="sel-idade-1" class="browser-default custom-select mt-3 selects">
+            <option selected value="-1">Selecione a idade da primeira criança</option>
+            <option value="0">0 anos</option>
+            <option value="1">1 ano</option>
+            <option value="2">2 anos</option>
+            <option value="3">3 anos</option>
+            <option value="4">4 anos</option>
+            <option value="5">5 anos</option>
+            <option value="6">6 anos</option>
+            <option value="7">7 anos</option>
+            <option value="8">8 anos</option>
+            <option value="9">9 anos</option>
+            <option value="10">10 anos</option>
+            <option value="11">11 anos</option>
+            <option value="12">12 anos</option>
+            <option value="13">13 anos</option>
+            <option value="14">14 anos</option>
+            <option value="15">15 anos</option>
+            <option value="16">16 anos</option>
+            <option value="17">17 anos</option>
+          </select>
+        </div>
+        
+        <div id="div-sel-idade-2" class="col-md-6" style="display:none">
+          <select id="sel-idade-2" class="browser-default custom-select mt-3">
+            <option selected value="-1">Selecione a idade da segunda criança</option>
+            <option value="0">0 anos</option>
+            <option value="1">1 ano</option>
+            <option value="2">2 anos</option>
+            <option value="3">3 anos</option>
+            <option value="4">4 anos</option>
+            <option value="5">5 anos</option>
+            <option value="6">6 anos</option>
+            <option value="7">7 anos</option>
+            <option value="8">8 anos</option>
+            <option value="9">9 anos</option>
+            <option value="10">10 anos</option>
+            <option value="11">11 anos</option>
+            <option value="12">12 anos</option>
+            <option value="13">13 anos</option>
+            <option value="14">14 anos</option>
+            <option value="15">15 anos</option>
+            <option value="16">16 anos</option>
+            <option value="17">17 anos</option>
+          </select>
+        </div>
+
+      </div>
+
+      <div id="div-idade-2" class="row mr-0">
+        
+        <div id="div-sel-idade-3" class="col-md-6" style="display:none">
+          <select id="sel-idade-3" class="browser-default custom-select mt-3">
+            <option selected value="-1">Selecione a idade da terceira criança</option>
+            <option  value="0">0 anos</option>
+            <option value="1">1 ano</option>
+            <option value="2">2 anos</option>
+            <option value="3">3 anos</option>
+            <option value="4">4 anos</option>
+            <option value="5">5 anos</option>
+            <option value="6">6 anos</option>
+            <option value="7">7 anos</option>
+            <option value="8">8 anos</option>
+            <option value="9">9 anos</option>
+            <option value="10">10 anos</option>
+            <option value="11">11 anos</option>
+            <option value="12">12 anos</option>
+            <option value="13">13 anos</option>
+            <option value="14">14 anos</option>
+            <option value="15">15 anos</option>
+            <option value="16">16 anos</option>
+            <option value="17">17 anos</option>
+          </select>
+        </div>
+        
+        <div id="div-sel-idade-4" class="col-md-6" style="display:none">
+          <select id="sel-idade-4" class="browser-default custom-select mt-3">
+            <option selected value="-1">Selecione a idade da quarta criança</option>
+            <option value="0">0 anos</option>
+            <option value="1">1 ano</option>
+            <option value="2">2 anos</option>
+            <option value="3">3 anos</option>
+            <option value="4">4 anos</option>
+            <option value="5">5 anos</option>
+            <option value="6">6 anos</option>
+            <option value="7">7 anos</option>
+            <option value="8">8 anos</option>
+            <option value="9">9 anos</option>
+            <option value="10">10 anos</option>
+            <option value="11">11 anos</option>
+            <option value="12">12 anos</option>
+            <option value="13">13 anos</option>
+            <option value="14">14 anos</option>
+            <option value="15">15 anos</option>
+            <option value="16">16 anos</option>
+            <option value="17">17 anos</option>
+          </select>
+        </div>
+
+      </div>
+
+      <div class="row mr-0">
+        <div class="col-md-12">
+          <button id="btn-buscar" class="btn btn-amber ml-0 mt-4 w-100">
+            <i class="fas fa-search"></i> Buscar
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Central Modal Medium -->
+  <div class="modal fade" id="centralModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div id="id-modal-dialog" class="modal-dialog modal-notify modal-danger" role="document">
+      <!--Content-->
+      <div class="modal-content">
+        <!--Header-->
+        <div class="modal-header">
+          <p id="id-title" class="heading lead">Ocorreu um erro!</p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" class="white-text">&times;</span>
+          </button>
+        </div>
+
+        <!--Body-->
+        <div class="modal-body">
+          <div class="text-center">
+            <i id="id-icon-dialog" class="fas fa-exclamation-triangle fa-4x mb-3 animated rotateIn"></i>
+            <p id="mensagem-modal"></p>
+            <!-- <canvas id='canvas' class="img-fluid"></canvas>
+            <img id="imagemFinal" class="img-fluid" src=""></img> -->
+          </div>
+        </div>
+
+        <!--Footer-->
+        <div class="modal-footer justify-content-center">
+          <a type="button" id="id-button-dialog" class="btn btn-outline-danger waves-effect" data-dismiss="modal">Fechar</a>
+        </div>
+      </div>
+      <!--/.Content-->
+    </div>
+  </div>
+  <!-- Central Modal Medium -->
+
+  <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">              
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <img src="" class="imagepreview" style="width: 100%;" >
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Modal -->
+<div class="modal fade right" id="modalImagemSucesso" tabindex="-1" role="dialog" aria-labelledby="exampleModalPreviewLabel" aria-hidden="true">
+    <div class="modal-dialog-full-width modal-dialog momodel modal-fluid" role="document">
+        <div class="modal-content-full-width modal-content ">
+            <div class=" modal-header-full-width modal-header text-center" style="background-color: rgb(89, 224, 89);">
+                <h5 class="modal-title w-100" id="exampleModalPreviewLabel">Sucesso!</h5>
+                <button type="button" class="close " data-dismiss="modal" aria-label="Close">
+                    <span style="font-size: 1.3em;" aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+              <canvas id='canvas' class="img-fluid" hidden></canvas>
+              <img id="imagemFinal" class="img-fluid" src=""></img>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!-- End your project here-->
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript" src="js/index.js"></script>
+
+</body>
+</html>
